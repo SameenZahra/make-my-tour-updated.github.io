@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISLAMABAD</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrapv3.min.css" rel="stylesheet" />
+    <link href="bootstrapv4.css" rel="stylesheet" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.4.1.min (1).js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+
+
+        section .section-title {
+            text-align: center;
+            color: #007b5e;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        #footer {
+            background: black !important;
+        }
+
+
+            #footer h5 {
+                padding-left: 10px;
+                border-left: 3px solid #eeeeee;
+                padding-bottom: 6px;
+                margin-bottom: 20px;
+                color: #ffffff;
+            }
+
+            #footer a {
+                color: #ffffff;
+                text-decoration: none !important;
+                background-color: transparent;
+            }
+
+            #footer ul.social li {
+                padding: 3px 0;
+            }
+
+                #footer ul.social li a i {
+                    margin-right: 5px;
+                    font-size: 25px;
+                    -webkit-transition: .5s all ease;
+                    -moz-transition: .5s all ease;
+                    transition: .5s all ease;
+                }
+
+                #footer ul.social li:hover a i {
+                    font-size: 30px;
+                    margin-top: -10px;
+                }
+
+                #footer ul.social li a,
+                #footer ul.quick-links li a {
+                    color: #ffffff;
+                }
+
+                    #footer ul.social li a:hover {
+                        color: #eeeeee;
+                    }
+
+            #footer ul.quick-links li {
+                padding: 3px 0;
+                -webkit-transition: .5s all ease;
+                -moz-transition: .5s all ease;
+                transition: .5s all ease;
+            }
+
+                #footer ul.quick-links li:hover {
+                    padding: 3px 0;
+                    margin-left: 5px;
+                    font-weight: 700;
+                }
+
+                #footer ul.quick-links li a i {
+                    margin-right: 5px;
+                }
+
+                #footer ul.quick-links li:hover a i {
+                    font-weight: 700;
+                }
+
+        @media (max-width:767px) {
+            #footer h5 {
+                padding-left: 0;
+                border-left: transparent;
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                alert("you are sucessfully loged in!")
+            })
+        });
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <header>
+         <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><h2>MakeMyTour</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><h3>Home</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html"><h3>About</h3></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html"><h3>Admin_login</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="booking_details.html"><h3>Booking</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="packages.html"><h3>packages</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="review.html"><h3>Reviews</h3><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="#contact" class="nav-item active">
+                        <a class="nav-link" href="contact.html"><h3>contact-us</h3><span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h3> Destinations</h3>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="islamabad.html">Islamabad</a>
+                            <a class="dropdown-item" href="kpk.html">KPK</a>
+                            <a class="dropdown-item" href="sindh.html">Sindh</a>
+                            <a class="dropdown-item" href="punjab.html">Punjab</a>
+                            <a class="dropdown-item" href="gb.html">Gilgit and Baltistan</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!--carusol-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Faisal Mosque Islamabad Pakistan 09.jpg" alt="isb" width="1100" height="500" />
+                    <div class="carousel-caption">
+                        <h3>FAISAL MOSQUE</h3>
+                       
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="isb1.jpg" alt="SAIFU-L" width="1100" height="500" />
+                    <div class="carousel-caption">
+                        <h3>DAMN -E- KOH</h3>
+                       
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="isb2.jpg" alt="BHANJOSA LAKE" width="1100" height="500" />
+                    <div class="carousel-caption">
+                        <h3>TRAIL 5</h3>
+                      
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="isb3.jpg" alt="GILGIT" width="1100" height="500" />
+                    <div class="carousel-caption">
+                        <h3>MONAL</h3>
+                       
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="isb4.jpg" alt="FAISAL MOSQUE" width="1100" height="500" />
+                    <div class="carousel-caption">
+                        <h3>RAWAL DAM</h3>
+                        <p>Thank you, ISB!</p>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+    <!--after carausol and about-->
+
+    <section>
+        <div class="container-fluid">
+            <h1 class="text-center text-capitalize pt-5 ">About Islamabad</h1>
+            <hr class="w-25 mx-auto pt-5" />
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img src="f2918653f2bdcfc7da2a40e407399791.jpg" width="1300" height="550" class="img-fluid" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h1>Who am I?</h1>
+                    <hr>
+                    <p>
+                        <h3>
+                            Islamabad (/ɪsˈlɑːməˌbɑːd/; Urdu: اسلام آباد‎, Islāmābād) is the capital city of Pakistan, and is federally administered as part of the Islamabad Capital Territory. Built as a planned city in the 1960s to replace Karachi as Pakistan's capital, Islamabad is noted for its high standards of living,[8] safety,[9] and abundant greenery.[10]
+                            Islamabad is the 9th largest city in Pakistan, while the larger Islamabad-Rawalpindi metropolitan area is the country's 4th largest with a population of about 7.4 million.[4] The city is the political seat of Pakistan and local government setup is run by the Islamabad Metropolitan Corporation, supported by the Capital Development Authority (CDA).
+                            Islamabad is located in the Pothohar Plateau in the northeastern part of the country, between Rawalpindi District and the Margalla Hills National Park to the north. The region has historically been a part of the crossroads of Punjab and Khyber Pakhtunkhwa with the Margalla Pass acting as the gateway between the two regions.[11]
+                            The city's master-plan, designed by Greek architect Constantinos Apostolou Doxiadis, divides the city into eight zones, including administrative, diplomatic enclave, residential areas, educational sectors, industrial sectors, commercial areas, and rural and green areas. The city is known for the presence of several parks and forests, including the Margalla Hills National Park and Shakarparian Park.[12] The city is home to several landmarks, including the Faisal Mosque, the largest mosque in South Asia[13] and the fourth largest in the world. Other landmarks include the Pakistan's National Monument and Democracy Square.[14][15][16]
+                        </h3>
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Islamabad" class="btn btn-primary">wanna know more</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    
+    <!--contact sction sart-->
+    <section id="contact" class="bg-danger ">
+        <article class="py-5 text-center text-white">
+            <div>
+               <h1>I S L A M A B A D    THE    B E A U T I F U L</h1>
+            </div>
+        </article>
+    </section>
+    <!--contact sction end-->
+    <!--gallery sction sart-->
+    <section>
+        <div class="container">
+            <h1 class="text-center text-capitalize pt-5 ">Gallery</h1>
+            <hr class="w-25 mx-auto pt-5" />
+            <div class="row text-center mb-5">
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="Faisal Mosque Islamabad Pakistan 09.jpg" class="img-fluid" />
+
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="isb1.jpg" class="img-fluid" />
+
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="isb2.jpg" class="img-fluid" />
+
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="isb3.jpg" class="img-fluid" />
+
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="isb4.jpg" class="img-fluid" />
+
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="f2918653f2bdcfc7da2a40e407399791.jpg"  class="img-fluid" />
+               </div>
+          </div>
+        </div>
+    </section>
+    <!--gallery end-->
+   
+    <!--footer start-->
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="about.html"><i class="fa fa-angle-double-right"></i>ABOUT US</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>CAREER</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>LIST YOUR HOTELS</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>VIDEOS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>CONTACT</a></li>
+                        <li><a href="about.html"><i class="fa fa-angle-double-right"></i>HOME</a></li>
+                        <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>LIST YOUR TRIPS</a></li>
+                        <li><a href="review.html"><i class="fa fa-angle-double-right"></i>REVIEW</a></li>
+                        <li><a href="deals.html"><i class="fa fa-angle-double-right"></i>DEALS</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>PRIVICY POLICY</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>BLOGS</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>STORIES</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>OUR RETAIL STORIES</a></li>
+                        <li><a href="#" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                  
+                    <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">MakeMyTour</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ./Footer -->
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

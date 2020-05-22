@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrapv3.min.css" rel="stylesheet" />
+    <link href="bootstrapv4.css" rel="stylesheet" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.4.1.min (1).js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+        
+       
+
+        @media (max-width:767px) {
+            #footer h5 {
+                padding-left: 0;
+                border-left: transparent;
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+            }
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height:10%;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><h2>MakeMyTour</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><h3>Home</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html"><h3>About</h3></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html"><h3>Admin_login</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="booking_details.html"><h3>Booking</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="packages.html"><h3>packages</h3> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="review.html"><h3>Reviews</h3><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="#contact" class="nav-item active">
+                        <a class="nav-link" href="contact.html"><h3>contact-us</h3><span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h3> Destinations</h3>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="islamabad.html">Islamabad</a>
+                            <a class="dropdown-item" href="kpk.html">KPK</a>
+                            <a class="dropdown-item" href="sindh.html">Sindh</a>
+                            <a class="dropdown-item" href="punjab.html">Punjab</a>
+                            <a class="dropdown-item" href="gb.html">Gilgit and Baltistan</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-secondary mb-5">
+        <article class="py-5">
+
+            <div class="container text-center mb-5">
+              
+                <hr class="w-25 mx-auto pt-5" />
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    <h1>Login Here</h1>
+                </button>
+            </div>
+            <div>
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h1 class="modal-title text-black-50">Login</h1>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form action="/action_page.php">
+                                    <div class="form-group">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" text-black-50 class="form-control" placeholder="Enter email" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" text-black-50 class="form-control" placeholder="Enter password" id="pwd">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input " type="checkbox" text-black-50 />Remember me
+                                        </label>
+                                    </div>
+                                    <input type=button class="btn btn-primary" onClick="parent.location='ADMIN_PANNEL.html'" value='submit'>
+                                </form>
+								 
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger " data-dismiss="modal">Close</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="footer">
+        <p>@copyrights makemytour.com</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
